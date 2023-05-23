@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:insert="top"></div>
+<body class='bgi'>
+  <div class='dv'>
+   <a href='setReminder' class='btl' style='margin-left:2vw'>Set Reminder</a>
+   <a href='update' class='btl' style='margin-left:2vw'>Modify Reminder</a>
+   <a href='publisher/dashboard' class='btl'> Disable Reminder</a>
+   <a href='delete-reminder' class='btl'>Delete Reminder</a>
+   <a href='book/search' class='btl'>Enable Reminder</a>
+   
+  </div>
+  <br>
+  <br>
+  <h3 th:text="${msg}" style='color:red' align='center'></h3>
+ </body>
+ </html>

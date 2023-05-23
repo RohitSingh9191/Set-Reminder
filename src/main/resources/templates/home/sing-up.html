@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+  <link th:href='@{/CSS/style.css}' rel='stylesheet'>
+  <link th:href='@{/CSS/login.css}' rel='stylesheet'>
+ </head>
+ <body  class='bgi'>
+  <div class='dvv'>
+   <label  style='color:orange;font-size:3vw'>REMINDER MANAGEMENT SYSTEM</label>
+  </div>
+ <form action='/Sing-up/save-user' method='post'>
+  <div align='center'>
+    <div class='dvadmin'>
+     <h2 style='font-size:2.1vw'>Sing up to the Reminders Application</h2>
+     <div class='dvlog'>
+       <label class='la'>Enter user name</label><br>
+       <input type='text' name='user_name' class='tblog' required>
+     </div>
+     <div class='dvlog'>
+       <label class='la'>Enter password</label><br>
+       <input type='password' name='password' class='tblog' required>
+     </div>	
+     <div class='dvlog'>	
+       <button class='btlog'>Sing up</button>
+       <div style="text-align:center;margin-top:1vw" >
+           <label class='la' th:text="${msg}" style='color:red'></label>
+       </div>
+       <a href="../Reminder">Go for login</a>
+       <div class='dvlog'>	
+       </div>
+     </div>	
+    </div>
+  </div>
+  </form>
+ </body>
+</html>

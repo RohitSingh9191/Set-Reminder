@@ -1,0 +1,105 @@
+<html>
+<body class='bgi'>
+<div th:insert="top"></div>
+<div class='container'>
+ <div class='card mx-auto col-md-10'>
+  <div class='card-body'>
+
+ 
+      <form method="post" action="save-record">
+                   <ul>
+                   <div class='row form-group'>
+                    <div class='col-md-10'>                     
+                   <li>
+                   <label >Date</label><span> *</span>
+                  <input type="date" required="" name="date" class='form-control'>
+                     </li>
+                     </div>
+                     </div>  
+                     
+           <div class='row form-group'>
+           <div class='col-md-10'>                      
+                    <li>
+				   <label >Subject</label><span> *</span>
+                   <select id="ddlViewBy" name="subject" class='form-control'>
+                  <option value="Subject1">Subject1</option>
+                   <option value="Subject2">Subject2</option>
+                  <option value="Subject3">Subject3</option>
+                 <option value="Subject4">Subject4</option>
+                <option value="Subject5">Subject5</option>
+                                                  
+              </select>
+           </li>
+           </div>
+           </div> 
+            
+      <div class='row form-group'>
+      <div class='col-md-10'>                                     
+           <li>
+           <label >Add Description</label><span> *</span>
+           <input type="text" required="" name="description" class='form-control'>                                     
+          </li>
+          </div>
+          </div>
+          
+     <div class='row form-group'>
+     <div class='col-md-10'>                                  
+          <li>
+          <lable>Email ID</lable><span> *</span>
+          <input type="email" required="" name="email" class='form-control'>
+          </li>
+         </div>
+         </div>
+         
+   
+   <div class='row form-group'>
+   <div class='col-md-10'> 
+         <li>
+             <label >Phone number</label><span> *</span>
+            <input type="number" required="" name="phone" class='form-control'>                                      
+           </li>
+           </div>
+           </div>
+           
+     <div class='row form-group'>
+     <div class='col-md-10'> 
+          <li>
+             <label >SMS No</label><span> *</span>
+            <input type="number" required="" name="sms" class='form-control'>
+                                                
+         </li>
+         </div>
+         </div>
+         
+     <div class='row form-group'>
+     <div class='col-md-10'> 
+        <li>
+        <label >Recur for next</label><span> *</span>
+        <input type="radio" value='7 days' required="" name="days">
+       <label >7 days</label>
+       <input type="radio" value='5 days' required="" name="days">
+      <label >5 days</label>
+      <input type="radio" value='3 days' required="" name="days">
+      <label >3 days</label>
+      <input type="radio" value='2 days' required="" name="days">
+      <label >2 days</label>
+ </li>
+  </div>
+  </div> 
+  
+ <div class='row form-group'>
+ <div class='col-md-10'>                                 
+<li>
+  <input style="background-color: aqua;"  type="submit" name="contact-us" value="Set Reminder">
+</li>
+</div>
+</div>
+
+ </ul>
+ 
+ </div>
+ </div>
+</div>
+</form>
+</body>
+</html>
